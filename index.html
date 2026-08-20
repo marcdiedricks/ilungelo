@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b5d4b">
+  <meta name="description" content="ILUNGELO, an offline-first South African workers' rights companion.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>ILUNGELO</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">South African workers' rights companion</p>
+      <h1>ILUNGELO</h1>
+    </div>
+    <span id="connection" class="status" aria-live="polite">Checking connection…</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="start-title">
+      <p class="kicker">Start here</p>
+      <h2 id="start-title">What happened at work?</h2>
+      <p>Choose the option that is closest to your problem. You do not need legal words.</p>
+    </section>
+
+    <section class="journeys" aria-label="Workplace problem choices">
+      <button data-journey="dismissal"><strong>I lost my job</strong><span>Dismissal or told not to return</span></button>
+      <button data-journey="pay"><strong>I was not paid correctly</strong><span>Missing, late or incorrect pay</span></button>
+      <button data-journey="deductions"><strong>Money was deducted</strong><span>Deductions from my wages</span></button>
+      <button data-journey="hours"><strong>Hours or overtime</strong><span>Working time, overtime or rest</span></button>
+      <button data-journey="leave"><strong>I have a leave problem</strong><span>Leave or time away from work</span></button>
+      <button data-journey="discipline"><strong>I received a warning</strong><span>Discipline or workplace process</span></button>
+      <button data-journey="treatment"><strong>I am being treated unfairly</strong><span>Unfair treatment at work</span></button>
+    </section>
+
+    <section id="journey-panel" class="panel" hidden aria-live="polite">
+      <button id="back" class="text-button">← Back</button>
+      <p class="kicker">Your situation</p>
+      <h2 id="journey-title"></h2>
+      <p id="journey-copy"></p>
+      <p class="notice">This first build does not make a legal finding yet. Guided questions and controlled rights information are added in later build stages.</p>
+    </section>
+
+    <section class="privacy">
+      <h2>Your information</h2>
+      <p>ILUNGELO is being built local-first. Basic guidance will not require an account. Worker case information will not be stored in the public application code.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>ILUNGELO MVP v0.1</span>
+    <span>Core guidance designed for offline use</span>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
