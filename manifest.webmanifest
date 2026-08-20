@@ -1,0 +1,11 @@
+{
+  "name":"ILUNGELO Workers' Rights Companion",
+  "short_name":"ILUNGELO",
+  "description":"Offline-first South African workers' rights companion",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f5f7f6",
+  "theme_color":"#0b5d4b",
+  "lang":"en-ZA"
+}
